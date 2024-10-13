@@ -1,0 +1,12 @@
+Send OTP
+------------
+endpoint : http://ec2-52-77-255-172.ap-southeast-1.compute.amazonaws.com:8080/ttc/otp/send/{number}
+method : POST
+number format: 9477XXXXXXX (Replace 0 with 94)
+
+Verify OTP
+------------
+endpoint (for login) : http://ec2-52-77-255-172.ap-southeast-1.compute.amazonaws.com:8080/ttc/otp/login/verify/{phoneNumber}/{userInputOTP}
+endpoint (for signup) : http://ec2-52-77-255-172.ap-southeast-1.compute.amazonaws.com:8080/ttc/otp/signup/verify/{phoneNumber}/{userInputOTP}
+method : POST
+number format: 9477XXXXXXX (Replace 0 with 94)
